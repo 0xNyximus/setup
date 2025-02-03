@@ -13,5 +13,7 @@
             device = "lenovo";
             profile = "neso";
         };
+
+        templates = import ./templates/default.nix;
     };
 }
