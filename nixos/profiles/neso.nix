@@ -39,6 +39,7 @@
     local.touchpad.enable = true;
 
     #### GENERAL APPLICATIONS ####
+    local.gaming.enable = true;
     local.terminal.enable = true;
     local.virtmanager = {
         enable = true;

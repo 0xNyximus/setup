@@ -15,6 +15,7 @@ inputs: {
         ./gnome.nix
 
         #### APPLICATIONS ####
+        ./gaming.nix
         ./terminal.nix
         ./virtmanager.nix
     ];
