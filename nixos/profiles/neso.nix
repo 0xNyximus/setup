@@ -40,4 +40,8 @@
 
     #### GENERAL APPLICATIONS ####
     local.terminal.enable = true;
+    local.virtmanager = {
+        enable = true;
+        users = [ "nyximus" ];
+    };
 }

@@ -16,5 +16,6 @@ inputs: {
 
         #### APPLICATIONS ####
         ./terminal.nix
+        ./virtmanager.nix
     ];
 }
