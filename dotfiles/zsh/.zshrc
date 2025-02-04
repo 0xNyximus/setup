@@ -16,7 +16,7 @@ function add_plugin() {
 }
 
 #### OPTIONS ####
-setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_ALL_DUPS
 
 #### ALIASES ####
 alias ls="lsd"
