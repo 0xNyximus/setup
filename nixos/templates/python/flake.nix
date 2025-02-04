@@ -1,5 +1,5 @@
 {
-    description = "C DevShell";
+    description = "Python DevShell";
 
     inputs = {
         nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
@@ -12,13 +12,9 @@
         });
     in {
         devShells = forAllSystems ({ pkgs }: {
-            default = pkgs.mkShell.override { stdenv = pkgs.clangStdenv; } {
+            default = pkgs.mkShell {
                 packages = with pkgs; [
-                    gdb
-                    cmake
-                    valgrind
-                    imhex
-                    clang-tools # Fixes not finding headers
+                    (python3.withPackages (pp: with pp; []))
                 ];
             };
         });
